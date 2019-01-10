@@ -32,7 +32,6 @@
     # BY @bower_components IN package.json                                                      #
     #############################################################################################
     $ gsg --rpc --rpccorsdomain "http://localhost:8000"
-    $ http-server ./app -a localhost -p 8000 -c-1
-
+    $ owt --rpc --rpccorsdomain "http://localhost:8000 console --rpcport 8545 --rpcapi web3,eth,personal
 ### LICENSE
     GPL (see LICENSE)
