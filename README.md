@@ -7,13 +7,15 @@
     $ curl -o- -L https://yarnpkg.com/install.sh | bash
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
-    $ bower install(sudo bower install --allow-root)
+    $ bower install
+    
     ############################################################################ 
     # - Bower2Yarn(https://bower.io/blog/2017/how-to-migrate-away-from-bower/) #
     # ref: https://github.com/sheerun/bower-away                               # 
     # sudo npm install -g bower-away                                           #
     # bower-away                                                               # 
     ############################################################################
+    
     [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
 ### RUN
     #############################################################################################
