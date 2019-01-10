@@ -1,8 +1,9 @@
 # EthExplorer
 ![EthExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
 
-### Install
-    - Install
+### INSTALL
+    BOWER IS DEPRECATED. IT WILL WORK AFTER CONVERTING INTO YARN.
+
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
     $ bower install
@@ -12,8 +13,8 @@
     # sudo npm install -g bower-away                                           #
     # bower-away                                                               # 
     ############################################################################
-    - DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html
-    - Run
+    [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
+### RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
     # WHILE USING bower2yarn, yarn WORKS, but npm install DOESN'T HANDLE DEPENDENCIES INDICATED #
@@ -22,5 +23,5 @@
     $ gsg --rpc --rpccorsdomain "http://localhost:8000"
     $ http-server ./app -a localhost -p 8000 -c-1
 
-### License
+### LICENSE
     GPL (see LICENSE)
