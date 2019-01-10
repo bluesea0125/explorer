@@ -31,7 +31,6 @@
     # WHILE USING bower2yarn, yarn WORKS, but npm install DOESN'T HANDLE DEPENDENCIES INDICATED #
     # BY @bower_components IN package.json                                                      #
     #############################################################################################
-    $ gsg --rpc --rpccorsdomain "http://localhost:8000"
-    $ owt --rpc --rpccorsdomain "http://localhost:8000 console --rpcport 8545 --rpcapi web3,eth,personal
+    $ ./owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545
 ### LICENSE
     GPL (see LICENSE)
