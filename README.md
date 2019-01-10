@@ -25,6 +25,10 @@
     ############################################################################
     
     [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
+### eth2owt
+    $ cd app/bower_components/web3
+    $ find -iregex '.*\.\(html\|js\|map\)$'|xargs sed -i "s/eth\./owt\./g"
+    $ find -iregex '.*\.\(html\|js\|map\)$'|xargs sed -i "s/eth_/owt_/g"
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
