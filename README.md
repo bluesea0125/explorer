@@ -11,6 +11,8 @@
     $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ### bower-away
     sudo npm install -g bower-away
+### http-server
+    sudo npm install -g http-server
 ### explorer
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
