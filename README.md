@@ -36,5 +36,6 @@
     # BY @bower_components IN package.json                                                      #
     #############################################################################################
     $ ./owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545
+    $ http-server ./app -a localhost -p 8000 -c-1
 ### LICENSE
     GPL (see LICENSE)
