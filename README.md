@@ -4,12 +4,7 @@
 
 # INSTALL
 ### [nodejs 6.x](https://github.com/bluesea0125/UseCases/blob/master/Ethereum2GSG/Ethereum/Dashboard/explorer.md#install-node-6x)
-    $ wget https://nodejs.org/download/release/v6.9.0/node-v6.9.0-linux-x64.tar.gz
-    $ tar xvfz node-v6.9.0-linux-x64.tar.gz
-    $ sudo mkdir -p /usr/local/nodejs
-    $ sudo mv node-v6.9.0-linux-x64/* /usr/local/nodejs/
-    $ sudo vim ~/.bashrc
-    export PATH=$PATH:/usr/local/nodejs/bin    
+### [nodejs 8.x](https://github.com/bluesea0125/UseCases/blob/master/Ethereum2GSG/Ethereum/Dashboard/Installation.md#install-node-guide)
 ### bower
     $ sudo npm install -g bower
 ### yarn
