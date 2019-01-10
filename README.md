@@ -3,7 +3,8 @@
 
 ### INSTALL
     BOWER IS DEPRECATED. IT WILL WORK AFTER CONVERTING INTO YARN.
-
+    
+    $ sudo npm install -g bower
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
     $ bower install
