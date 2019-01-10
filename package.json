@@ -1,9 +1,9 @@
 {
-  "name": "EthereumExplorer",
+  "name": "OWTExplorer",
   "private": false,
   "version": "0.1.0",
-  "description": "A lightweight ethereum block explorer",
-  "repository": "https://github.com/etherparty/explorer",
+  "description": "A lightweight owt block explorer",
+  "repository": "https://github.com/bluesea0125/explorer",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
