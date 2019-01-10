@@ -1,9 +1,9 @@
-# EthExplorer
-![EthExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
+# BOWER IS DEPRECATED. IT WILL WORK AFTER CONVERTING INTO YARN.
+# OWTExplorer
+![OWTExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
 
 ### INSTALL
-    BOWER IS DEPRECATED. IT WILL WORK AFTER CONVERTING INTO YARN.
-    
+    $ curl -o- -L https://yarnpkg.com/install.sh | bash
     $ sudo npm install -g bower
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
