@@ -1,29 +1,26 @@
-# EthExplorer (In Progress)
-
+# EthExplorer
 ![EthExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
 
-##License
+### Install
+    - Install
+    $ git clone https://github.com/etherparty/explorer
+    $ cd explorer
+    $ bower install
+    ############################################################################ 
+    # - Bower2Yarn(https://bower.io/blog/2017/how-to-migrate-away-from-bower/) #
+    # ref: https://github.com/sheerun/bower-away                               # 
+    # sudo npm install -g bower-away                                           #
+    # bower-away                                                               # 
+    ############################################################################
+    - DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html
+    - Run
+    #############################################################################################
+    # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
+    # WHILE USING bower2yarn, yarn WORKS, but npm install DOESN'T HANDLE DEPENDENCIES INDICATED #
+    # BY @bower_components IN package.json                                                      #
+    #############################################################################################
+    $ gsg --rpc --rpccorsdomain "http://localhost:8000"
+    $ http-server ./app -a localhost -p 8000 -c-1
 
-GPL (see LICENSE)
-
-##Installation
-
-Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git installation") if you haven't already
-
-Clone the repo
-
-`git clone https://github.com/etherparty/explorer`
-
-Download [Nodejs and npm](https://docs.npmjs.com/getting-started/installing-node "Nodejs install") if you don't have them
-
-Start the program. All dependencies will be automatically downloaded
-
-`npm start`
-
-Then visit http://localhost:8000 in your browser of choice. You might get an error message:
-
-`geth --rpc --rpccorsdomain "http://localhost:8000"`
-
-Install [geth](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum "Geth install") if you don't already have it, then run the above command.
-
-Then refresh the page in your browser 
+### License
+    GPL (see LICENSE)
