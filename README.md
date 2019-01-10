@@ -3,8 +3,8 @@
 ![OWTExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
 
 ### INSTALL
-    $ curl -o- -L https://yarnpkg.com/install.sh | bash
     $ sudo npm install -g bower
+    $ curl -o- -L https://yarnpkg.com/install.sh | bash
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
     $ bower install
