@@ -7,7 +7,7 @@
     $ curl -o- -L https://yarnpkg.com/install.sh | bash
     $ git clone https://github.com/etherparty/explorer
     $ cd explorer
-    $ bower install
+    $ bower install(sudo bower install --allow-root)
     ############################################################################ 
     # - Bower2Yarn(https://bower.io/blog/2017/how-to-migrate-away-from-bower/) #
     # ref: https://github.com/sheerun/bower-away                               # 
