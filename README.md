@@ -35,6 +35,9 @@
     $ rm -rf app/bower_components/web3
     $ cd app/bower_components/
     $ git clone https://github.com/bluesea0125/web3.js
+    - web3.min.js to web3.js
+    Already Resolved.
+    $ sed -i 's/web3\.min\.js/web3\.js/g' app/index.html
 ### remove google dependencies
     Already Resolved.
     app/index.html
