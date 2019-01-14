@@ -29,6 +29,9 @@
     $ cd app/bower_components/web3
     $ find -iregex '.*\.\(html\|js\|map\)$'|xargs sed -i "s/eth\./owt\./g"
     $ find -iregex '.*\.\(html\|js\|map\)$'|xargs sed -i "s/eth_/owt_/g"
+### remove google dependencies
+    Already Resolved.
+    app/index.html
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
