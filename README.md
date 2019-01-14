@@ -26,12 +26,12 @@
     
     [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
 ### eth2owt
-    $ cp script/convert.sh app/bower_components/web3
-    $ cp script/rename.py app/bower_components/web3/test
-    $ cd app/bower_components/web3
-    $ ./convert.sh
-    $ cd test
-    $ python rename.py
+    # $ cp script/convert.sh app/bower_components/web3
+    # $ cp script/rename.py app/bower_components/web3/test
+    # $ cd app/bower_components/web3
+    # $ ./convert.sh
+    # $ cd test
+    # $ python rename.py
 ### remove google dependencies
     Already Resolved.
     app/index.html
