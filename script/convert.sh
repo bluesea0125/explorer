@@ -14,3 +14,5 @@ find -iregex '.*\.\(html\|js\|map\|md\|json\)$'|xargs sed -i "s/ether\:/owter\:/
 find -iregex '.*\.\(html\|js\|map\|md\|json\)$'|xargs sed -i "s/ether\"/owter\"/g"
 ###
 find -iregex '.*\.\(html\|js\|map\|md\|json\)$'|xargs sed -i "s/ethdev/owtdev/g"
+###
+mv 'lib/web3/methods/eth.js' 'lib/web3/methods/owt.js'
