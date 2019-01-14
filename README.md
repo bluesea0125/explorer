@@ -32,6 +32,9 @@
     # $ ./convert.sh
     # $ cd test
     # $ python rename.py
+    $ rm -rf app/bower_components/web3
+    $ cd app/bower_components/
+    $ git clone https://github.com/bluesea0125/web3.js
 ### remove google dependencies
     Already Resolved.
     app/index.html
