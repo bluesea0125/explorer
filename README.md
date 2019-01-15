@@ -45,7 +45,7 @@
     - web3
     app/index.html->app/bower_components/web3/dist/web3.js
     - gulp
-    $ cd ..
+    $ cd app/bower_components/web3
     $ gulp
     > dist/web3.js
 # RUN
