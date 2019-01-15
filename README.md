@@ -41,6 +41,12 @@
 ### remove google dependencies
     Already Resolved.
     app/index.html
+### web analysis
+    index.html->app/bower_components/web3/dist/web3.js->
+    app/bower_components/web3/dist/web3.js -> app/bower_components/web3/lib/web3/methods/eth
+                                           -> app/bower_components/web3/lib/web3/methods
+                                           -> app/bower_components/web3/lib/web3/requestmanager
+                                           -> 
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
