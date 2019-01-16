@@ -44,10 +44,6 @@
 ### web analysis
     - web3
     app/index.html->app/bower_components/web3/dist/web3.js
-    - gulp
-    $ cd app/bower_components/web3
-    $ gulp
-    > dist/web3.js
 ### web3 in explorer
     app/scripts/controllers/blockInfosController.js:15:                        var number = web3.eth.blockNumber;
     app/scripts/controllers/blockInfosController.js:51:                        var info = web3.eth.getBlock($scope.blockNumber);
@@ -61,7 +57,7 @@
     app/scripts/controllers/mainController.js:7:	var blockNum = $scope.blockNum = parseInt(web3.eth.blockNumber, 10);
     app/scripts/controllers/mainController.js:15:	    $scope.blocks.push(web3.eth.getBlock(blockNum - i));
 ### delete cache
-    rm ~/.cache/google-chrome/Profile\ 1/ -rf
+    rm ~/.cache -rf
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
