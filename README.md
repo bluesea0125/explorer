@@ -60,7 +60,8 @@
     app/scripts/controllers/addressInfoController.js:21:          web3.eth.getBalance($scope.addressId,function(error, result) {
     app/scripts/controllers/mainController.js:7:	var blockNum = $scope.blockNum = parseInt(web3.eth.blockNumber, 10);
     app/scripts/controllers/mainController.js:15:	    $scope.blocks.push(web3.eth.getBlock(blockNum - i));
-
+### delete cache
+    rm ~/.cache/google-chrome/Profile\ 1/ -rf
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
