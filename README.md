@@ -14,7 +14,7 @@
 ### http-server
     sudo npm install -g http-server
 ### explorer
-    $ git clone https://github.com/etherparty/explorer
+    $ git clone https://github.com/bluesea0125/explorer
     $ cd explorer
     $ bower install
     
