@@ -27,16 +27,16 @@
     [ eth2owt: sed -i 's/eth_/owt_/g' app/web3/dist/web3.js]
     [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
     [ web3.min.js to web3.js: sed -i 's/web3\.min\.js/web3\.js/g' app/index.html]
-    [delete cache:  rm ~/.cache -rf]
+    [ Delete Cache:  rm ~/.cache -rf]
 ### web3.js
-    $ npm run-script web.js
+    $ npm run-script web3.js
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
     # WHILE USING bower2yarn, yarn WORKS, but npm install DOESN'T HANDLE DEPENDENCIES INDICATED #
     # BY @bower_components IN package.json                                                      #
+    # ./owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545                       #
     #############################################################################################
-    $ ./owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545
-    $ http-server ./app -a localhost -p 8000 -c-1
+    $ npm run-script run
 ### LICENSE
     GPL (see LICENSE)
