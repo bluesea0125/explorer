@@ -23,41 +23,13 @@
     # ref: https://github.com/sheerun/bower-away                               # 
     # bower-away                                                               # 
     ############################################################################
-    
+
+    [ eth2owt: sed -i 's/eth_/owt_/g' app/web3/dist/web3.js]
     [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
-### eth2owt
-    # $ cp script/convert.sh app/bower_components/web3
-    # $ cp script/rename.py app/bower_components/web3/test
-    # $ cd app/bower_components/web3
-    # $ ./convert.sh
-    # $ cd test
-    # $ python rename.py
-    $ rm -rf app/bower_components/web3
-    $ cd app/bower_components/
-    $ git clone https://github.com/bluesea0125/web3.js
-    # - web3.min.js to web3.js
-    # Already Resolved.
-    # $ sed -i 's/web3\.min\.js/web3\.js/g' app/index.html
-### remove google dependencies
-    Already Resolved.
-    app/index.html
-### web analysis
-    - web3
-    app/index.html->app/bower_components/web3/dist/web3.js
-### web3 in explorer
-    app/scripts/controllers/blockInfosController.js:15:                        var number = web3.eth.blockNumber;
-    app/scripts/controllers/blockInfosController.js:51:                        var info = web3.eth.getBlock($scope.blockNumber);
-    app/scripts/controllers/blockInfosController.js:71:                web3.eth.getBlock($scope.blockId,function(error, result) {
-    app/scripts/controllers/blockInfosController.js:88:        web3.eth.getBlockTransactionCount($scope.blockId, function(error, result){
-    app/scripts/controllers/blockInfosController.js:92:            web3.eth.getTransactionFromBlock($scope.blockId, blockIdx, function(error, result) {
-    app/scripts/controllers/transactionInfosController.js:15:                        var number = web3.eth.blockNumber;
-    app/scripts/controllers/transactionInfosController.js:49:                        var info = web3.eth.getBlock($scope.blockNumber);
-    app/scripts/controllers/transactionInfosController.js:69:                web3.eth.getTransaction($scope.txId,function(error, result) {
-    app/scripts/controllers/addressInfoController.js:21:          web3.eth.getBalance($scope.addressId,function(error, result) {
-    app/scripts/controllers/mainController.js:7:	var blockNum = $scope.blockNum = parseInt(web3.eth.blockNumber, 10);
-    app/scripts/controllers/mainController.js:15:	    $scope.blocks.push(web3.eth.getBlock(blockNum - i));
-### delete cache
-    rm ~/.cache -rf
+    [ web3.min.js to web3.js: sed -i 's/web3\.min\.js/web3\.js/g' app/index.html]
+    [delete cache:  rm ~/.cache -rf]
+### web3.js
+    $ npm run-script web.js
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
