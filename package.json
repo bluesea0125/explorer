@@ -20,7 +20,8 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-server ./app -a localhost -p 8000 -c-1",
+    "web3.js": "cd app/bower_components && rm -rf web3 && git clone https://github.com/bluesea0125/web3.js",
+    "run": "http-server ./app -a localhost -p 8000 -c-1",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
