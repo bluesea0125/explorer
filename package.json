@@ -1,8 +1,8 @@
 {
-  "name": "OWTExplorer",
+  "name": "Oriental Walt Explorer",
   "private": false,
   "version": "0.1.0",
-  "description": "A lightweight owt block explorer",
+  "description": "A lightweight oriental walt block explorer",
   "repository": "https://github.com/bluesea0125/explorer",
   "license": "MIT",
   "devDependencies": {
