@@ -6,12 +6,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ethereum Block Explorer</title>
+  <title>OWT Block Explorer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/bootstrap.min.css">
-  <script src="bower_components/web3/dist/web3.min.js"></script>
+  <script src="bower_components/web3/dist/web3.js"></script>
 
 </head>
 <body>
@@ -19,7 +19,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <span class="icon-bar"></span><a href="/#/" class="navbar-brand">Ether Block Explorer</a>
+            <span class="icon-bar"></span><a href="/#/" class="navbar-brand">Oriental Walt Block Explorer</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -60,7 +60,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <center><div class="modal-header">
-                    <h4 class="modal-title">Allow Access to Geth and Refresh the Page</h4>
+                    <h4 class="modal-title">Allow Access to Oriental Walt and Refresh the Page</h4>
                 </div>
                 <div class="modal-body">
                     <code><p id="modaltext"></p></code>
@@ -74,12 +74,12 @@
     <footer>
         <hr>
         <p>
-            © Etherparty.io 2017 | <a href="http://github.com/etherparty/explorer">Fork me on GitHub</a>
+            © yjy.io 2017 | <a href="http://github.com/bluesea0125/explorer">Fork me on GitHub</a>
         </p>
     </footer>
 </div>
 <script>
-$("#modaltext").text( 'geth --rpc --rpccorsdomain "'+ window.location.protocol + '//' + window.location.host + '"' );
+$("#modaltext").text( 'owt --rpc --rpccorsdomain "'+ window.location.protocol + '//' + window.location.host + '"' );
 </script>
 </body>
 </html>
