@@ -1,6 +1,6 @@
-# OWTExplorer
+# Oriental Walt Explorer
 ### BOWER IS DEPRECATED. IT WILL WORK AFTER CONVERTING INTO YARN.
-![OWTExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
+![Oriental Walt Explorer Screenshot](http://i.imgur.com/NHFYq0x.png)
 
 # INSTALL
 ### [nodejs 6.x](https://github.com/bluesea0125/UseCases/blob/master/Ethereum2GSG/Ethereum/Dashboard/explorer.md#install-node-6x)
