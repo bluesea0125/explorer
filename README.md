@@ -44,5 +44,9 @@
     app/app.js: var owt_node_url = 'http://localhost:8545'; // TODO: remote URL 
     owt: owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545 
     npm: http-server ./app -a localhost -p 8000 -c-1
+### [docker](https://github.com/bluesea0125/Docker/blob/master/Host2Container.md)
+    [MODIFIEY OWT RPC ADDRESS: /root/explorer/app/app.js]
+    ubunt@ docker run --network host --rm -it falcon0125/yjy:owt-exp
+    root@ owthttp
 ### LICENSE
     GPL (see LICENSE)
