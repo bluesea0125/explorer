@@ -23,18 +23,13 @@
     # ref: https://github.com/sheerun/bower-away                               # 
     # bower-away                                                               # 
     ############################################################################
-
+### web3.js
+    $ npm run-script web3.js    
+# MODIFY
     [ eth2owt: sed -i 's/eth_/owt_/g' app/web3/dist/web3.js]
     [ DownLoad JS, CSS files from Remote to Local. Change the path to them in index.html]
     [ web3.min.js to web3.js: sed -i 's/web3\.min\.js/web3\.js/g' app/index.html]
     [ Delete Cache:  rm ~/.cache -rf]
-### web3.js
-    $ npm run-script web3.js
-### remote access
-    - app/app.js
-    
-    var eth_node_url = 'http://192.168.10.79:8545'; // TODO: remote URL 
-    - 
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
