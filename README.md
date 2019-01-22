@@ -30,13 +30,24 @@
     [ Delete Cache:  rm ~/.cache -rf]
 ### web3.js
     $ npm run-script web3.js
+### remote access
+    - app/app.js
+    
+    var eth_node_url = 'http://192.168.10.79:8545'; // TODO: remote URL 
+    - 
 # RUN
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
     # WHILE USING bower2yarn, yarn WORKS, but npm install DOESN'T HANDLE DEPENDENCIES INDICATED #
     # BY @bower_components IN package.json                                                      #
-    # ./owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545                       #
     #############################################################################################
-    $ npm run-script run
+    - remote access
+    app/app.js: var owt_node_url = 'http://192.168.10.79:8545'; // TODO: remote URL 
+    owt: owt --rpc --rpcaddr "0.0.0.0" --rpccorsdomain "http://192.168.10.79:8000" --rpcport 8545
+    npm: http-server ./app -p 8000 -c-1
+    - local access
+    app/app.js: var owt_node_url = 'http://localhost:8545'; // TODO: remote URL 
+    owt: owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545 
+    npm: http-server ./app -a localhost -p 8000 -c-1
 ### LICENSE
     GPL (see LICENSE)
