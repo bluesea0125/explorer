@@ -31,6 +31,7 @@
     [ web3.min.js to web3.js: sed -i 's/web3\.min\.js/web3\.js/g' app/index.html]
     [ Delete Cache:  rm ~/.cache -rf]
 # RUN
+### Host
     #############################################################################################
     # DO NOT USE npm start. npm install MAKES TROUBLE.                                          #                    
     # WHILE USING bower2yarn, yarn WORKS, but npm install DOESN'T HANDLE DEPENDENCIES INDICATED #
@@ -44,7 +45,7 @@
     app/app.js: var owt_node_url = 'http://localhost:8545'; // TODO: remote URL 
     owt: owt  --rpc --rpccorsdomain "http://localhost:8000" --rpcport 8545 
     npm: http-server ./app -a localhost -p 8000 -c-1
-### [docker](https://github.com/bluesea0125/Docker/blob/master/Host2Container.md)
+### [Docker](https://github.com/bluesea0125/Docker/blob/master/Host2Container.md)
     [MODIFIEY OWT RPC ADDRESS: /root/explorer/app/app.js]
     ubunt@ docker run --network host --rm -it falcon0125/yjy:owt-exp
     root@ owthttp
