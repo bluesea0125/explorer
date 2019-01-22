@@ -47,7 +47,6 @@
     npm: http-server ./app -a localhost -p 8000 -c-1
 ### [Docker](https://github.com/bluesea0125/Docker/blob/master/Host2Container.md)
     [MODIFIEY OWT RPC ADDRESS: /root/explorer/app/app.js]
-    ubunt@ docker run --network host --rm -it falcon0125/yjy:owt-exp
-    root@ owthttp
+    docker run --network host --rm -d -it falcon0125/yjy:owt-exp bash -c "http-server /root/explorer/app -p 8000 -c-1"
 ### LICENSE
     GPL (see LICENSE)
