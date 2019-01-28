@@ -4,7 +4,7 @@ alias owtinit='$owtpath/owt init $owtpath/../data/genesis.json'
 alias owtdel='rm -rf $HOME/.owt'
 alias owtnew='$owtpath/owt account new'
 alias owtstart='$owtpath/owt --dashboard --vmodule=dashboard=5 --rpc --rpcport 8545 --rpcapi web3,owt,personal --nodiscover console'
-alias owtexp="nohup $owtpath/owt --rpc --rpcaddr '0.0.0.0' --rpccorsdomain 'http://192.168.10.79:8000' --rpcport 8545 > /dev/null 2>&1 &"
+alias owtexp="nohup $owtpath/owt --rpc --rpcaddr '0.0.0.0' --rpccorsdomain 'http://192.168.10.$1:8000' --rpcport 8545 > /dev/null 2>&1 &"
 alias owtexpd='docker run --rm --network host -d -it falcon0125/yjy:owt bash -c "owt --rpc --rpcaddr 0.0.0.0 --rpccorsdomain http://192.168.10.79:8000 --rpcport 8545"'
 alias owthttpd=$'docker run --network host --rm -d -it falcon0125/yjy:owt-exp bash -c \'sed -i "s/79/$1/g" /root/explorer/app/app.js &&  http-server /root/explorer/app -p 8000 -c-1\''
 alias owtdoc='owtexpd && owthttpd'
